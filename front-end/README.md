@@ -1,12 +1,48 @@
-# React + Vite
+# 🌟 Job Listing Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive job listing application where users can explore jobs and view detailed job descriptions. Built with React for the frontend and Node.js/Express + MongoDB for the backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+- **Frontend (Vercel)**: [https://your-frontend.vercel.app](https://your-frontend.vercel.app)  
+- **Backend (Render)**: [https://bcknd-3yu3.onrender.com](https://bcknd-3yu3.onrender.com)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Tailwind CSS
+- Axios
+- React Icons
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+- dotenv
+- CORS
+
+---
+
+## 📁 Project Structure
+
+```bash
+📦 job-portal/
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── .env
+│   └── server.js
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.jsx
+│   ├── public/
+│   └── .env

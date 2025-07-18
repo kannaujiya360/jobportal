@@ -1,3 +1,4 @@
+// server.js
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -9,25 +10,23 @@ connectDB();
 
 const app = express();
 
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://frontend-7vjm.vercel.app'
+  
+];
 
 app.use(cors({
-  origin: 'http://localhost:5173',
-  methods: ['GET', 'POST', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  origin: allowedOrigins,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
 
 app.use(express.json());
-
-
 app.use('/api/jobs', jobRoutes);
 
-
-app.get('/api/health', (req, res) => {
-  res.status(200).json({
-    status: 'healthy',
-    timestamp: new Date().toISOString()
-  });
+app.get('/', (req, res) => {
+  res.send('🚀 Job Listing API Running...');
 });
 
 const PORT = process.env.PORT || 3002;

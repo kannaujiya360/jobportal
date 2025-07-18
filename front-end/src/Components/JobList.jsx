@@ -2,7 +2,7 @@ const JobList = ({ jobs, onSelect }) => {
   return (
     <div className="w-full md:w-[50%] xl:w-[40%] h-full overflow-y-auto p-6 bg-gradient-to-b from-indigo-100 to-white rounded-2xl shadow-xl border-r border-gray-300">
       <h2 className="text-3xl font-extrabold text-indigo-800 mb-8 tracking-tight text-center md:text-left">
-        🔥 Latest Job Listings
+         Latest Job Listings
       </h2>
 
       {jobs.length === 0 && (
